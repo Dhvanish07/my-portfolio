@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
 const Contact = () => {
@@ -23,35 +22,24 @@ const Contact = () => {
       setShowAlert(false);
     }, 5000);
   };
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
 
-    try {
-      console.log("From submitted:", formData);
-      await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
-        {
-          from_name: formData.name,
-          to_name: "Ali",
-          from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
-          message: formData.message,
-        },
-        "pn-Bw_mS1_QQdofuV"
-      );
-      setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
-    } catch (error) {
-      setIsLoading(false);
-      console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
-    }
+    const { name, email, message } = formData;
+    const phone = "917798727444"; // India country code +91 without plus sign
+    const text = `Let's connect!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    // Prefer redirect to trigger app on mobile; web.whatsapp opens on desktop
+    window.location.href = whatsappUrl;
+
+    setIsLoading(false);
+    setFormData({ name: "", email: "", message: "" });
+    showAlertMessage("success", "Opening WhatsApp…");
   };
   return (
-    <section className="relative flex items-center c-space section-spacing">
+    <section id="contact" className="relative flex items-center c-space section-spacing">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
