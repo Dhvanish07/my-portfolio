@@ -1,62 +1,43 @@
-# 🚀 3D Developer Portfolio
+# Dhvanish Dhulla — 3D Developer Portfolio
 
-A modern, animated 3D developer portfolio built with React, Three.js, TailwindCSS, and motion effects — designed to help you stand out and showcase your skills creatively.
-
-![3D Portfolio Screenshot](https://github.com/user-attachments/assets/9b0ed20e-074e-4f2a-81d8-20c9da751e9e)
+Modern, animated portfolio built with React, Three.js, TailwindCSS, and motion effects to showcase projects and experience.
 
 ---
 
-## 📚 Table of Contents
+## Features
 
-* [Features](#-features)
-* [Tech Stack](#-tech-stack)
-* [Project Structure](#-project-structure)
-* [Getting Started](#-getting-started)
-* [Assets](#-assets)
-* [Contact](#-contact)
-* [Suggestions or Feedback](#-suggestions-or-feedback)
-* [Support](#-support)
+- 3D visuals via React Three Fiber and Drei
+- Smooth motion/scroll animations with Motion
+- Responsive UI with TailwindCSS
+- Contact form opens WhatsApp chat to +91 7798727444 with a prefilled message
+- Fast dev/build with Vite
 
 ---
 
-## ✨ Features
+## Tech Stack
 
-* 🔥 3D visuals powered by **React Three Fiber** and **Drei**
-* ⚡ Smooth transitions and scroll-based animations using **Framer Motion**
-* 🎨 Clean, responsive UI with **TailwindCSS**
-* 💌 Working contact form using **EmailJS**
-* 🧱 Beautiful UI enhancements with **Aceternity UI** and **Magic UI**
-* 🚀 Lightning-fast development with **Vite**
-
----
-
-## 🛠 Tech Stack
-
-| Tech              | Description                            |
-| ----------------- | -------------------------------------- |
-| React             | Front-end JavaScript library           |
-| Vite              | Fast bundler and dev environment       |
-| TailwindCSS       | Utility-first CSS framework            |
-| React Three Fiber | 3D rendering with Three.js in React    |
-| Drei              | Helpers and abstractions for R3F       |
-| Framer Motion     | Animation library for React            |
-| EmailJS           | Form handling and email integration    |
-| Aceternity UI     | Custom UI components                   |
-| Magic UI          | Prebuilt UI elements and design extras |
+| Tech              | Description                           |
+|-------------------|---------------------------------------|
+| React             | Front-end JavaScript library          |
+| Vite              | Fast bundler and dev environment      |
+| TailwindCSS       | Utility-first CSS framework           |
+| React Three Fiber | 3D rendering with Three.js in React   |
+| Drei              | R3F helpers                           |
+| Motion            | Animation library for React           |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 ├── public/
 │   ├── assets/             # Images, textures, models
-│   ├── models/             # 3D models
+│   ├── models/             # 3D Astronaut model
 │   └── vite.svg
 ├── src/
 │   ├── components/         # Reusable components
 │   ├── constants/          # Reusable data
-│   ├── sections/           # Portfolio sections (Hero, About, etc.)
+│   ├── sections/           # Page sections (Hero, About, etc.)
 │   ├── App.jsx             # Main app file
 │   ├── index.css           # Tailwind CSS
 │   └── main.jsx            # Entry point
@@ -66,58 +47,39 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 
 ---
 
-## 🚀 Getting Started
-
-1. Clone the repository
+## Local Development
 
 ```bash
 git clone https://github.com/Dhvanish07/my-portfolio.git
 cd my-portfolio
-```
-
-2. Install dependencies
-
-```bash
 npm install
-```
-
-3. Run the development server
-
-```bash
 npm run dev
+# open http://localhost:5173
 ```
 
-The app will be available at [http://localhost:5173](http://localhost:5173).
+---
+
+## Deploying to Vercel
+
+1) Push this repo to GitHub (already done).
+2) On Vercel, “Add New Project” → Import `Dhvanish07/my-portfolio`.
+3) Framework preset: “Vite”.
+4) Build Command: `npm run build`
+5) Output Directory: `dist`
+6) Environment variables: none required.
+
+After deploy, set custom domain if needed.
 
 ---
 
-## 🔗 Assets
+## Contact
 
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
-
----
-
-## 📬 Contact
-
-You can reach out via GitHub issues or connect on LinkedIn:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
+- Email: `dhvanish.07@gmail.com`
+- WhatsApp: `wa.me/917798727444`
+- LinkedIn: `linkedin.com/in/dhvanish07`
 
 ---
 
-## 💡 Suggestions or Feedback?
+## License
 
-Open an issue here on GitHub or suggest future improvements:
-
-* A beautiful Landing Page
-* A complete E-commerce site
-* A fun App Clone (YouTube, Netflix, etc.)
-* Another interactive Portfolio
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub to support it and stay updated with new features.
-
-
+This project is for personal portfolio use. You may reference structure/ideas with attribution.

@@ -1,0 +1,15 @@
+{
+  "hash": "ecccf728",
+  "configHash": "a16f18e5",
+  "lockfileHash": "01c0af0d",
+  "browserHash": "685383c6",
+  "optimized": {
+    "motion/react": {
+      "src": "../../node_modules/motion/dist/es/motion/lib/react.mjs",
+      "file": "motion_react.js",
+      "fileHash": "e9a0af22",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
